@@ -59,6 +59,7 @@ server {
       fastcgi_param SCRIPT_FILENAME /srv/emcom/emkillboard/$1;
       fastcgi_index index.php;
       fastcgi_pass unix:/srv/emcom/sockets/php.socket;
+      include fastcgi_params;
     }
   }
 
